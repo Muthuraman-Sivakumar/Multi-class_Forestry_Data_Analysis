@@ -1,0 +1,133 @@
+Round 1 Insight Summaries:
+
+
+
+
+
+
+Distance-related Features
+
+        NOTE: used SD 1.5 to represent ~86.64% of the population
+        
+        Finding:
+
+                Elevation
+                        
+                        median: 
+                                
+                                1. C7 - 3.3k
+                                2. C1 - 3.1k
+                                3. C2 and C5- 2.9k and 2.8 respectively
+                                4. C3 and C6 - both 2.4k
+                                5. C4 - 2.2k
+
+                        SD 1.5:
+
+                                1. C7 - ~[3.2k, 3.5k]
+                                2. C1 - ~[2.9k, 3.4k]
+                                3. C2 - ~[2.6k, 3.2k]
+                                4. C5 - ~[2.6k, 2.9k]
+                                5. C3 and C6 - both ~[2.1k, 2.7k]
+                                6. C4 - ~[2.0k, 2.4k]
+
+                H Dist. Roadways
+
+                        meadian;
+
+                                1. 
+                                2. 
+                                3. 
+
+
+Wilderness Area
+
+        Finding:
+
+                C1
+
+                        Area 0 = ~ 50% full
+                        Area 1 = ~ 0%
+                        Area 2 = ~ 40% full
+                        Area 3 = ~ 0%
+
+                C2
+
+                        Area 0 = ~ 50% full
+                        Area 1 = ~ 0%
+                        Area 2 = ~ 40% full
+                        Area 3 = ~ 0%
+
+                C3
+
+                        Area 0 = 0%
+                        Area 1 = 0%
+                        Area 2 = ~ 60% full
+                        Area 3 = ~ 60% full
+
+                C4
+
+                        Area 0 = 0%
+                        Areas 1 = 0%
+                        Area 2 = 0%
+                        Area 3 = 100% full
+
+                C5
+
+                        Area 0 = 0%
+                        Areas 1 = 0%
+                        Area 2 = ~ 60% full
+                        Area 3 = ~ 0%
+
+                C6
+
+                        Area 0 = 0%
+                        Areas 1 = 0%
+                        Area 2 = ~ 40% full
+                        Area 3 = ~ 60%
+
+                C7
+
+                        Area 0 = ~ 25% full
+                        Area 1 = 0%
+                        Area 2 = ~ 65% full
+                        Area 3 = 0%
+
+
+
+                Summary:
+
+                        Area 0 corresponds with 1, 2, 7
+                        Area 1 corresponds with none
+                        Area 2 corresponds with 1, 2, 3, 5, 6, 7
+                        Area 3 corresponds with 3, 4, 6
+
+
+                        Class 1 and 2 ONLY match to Areas 0 and 1
+                        Class 3 ONLY matches to Area 2 and 3
+                        Class 4 ONLY matches to Area 3
+                        Class 5 ONLY matches to Area 2
+                        Class 6 ONLY matches to Areas 2 and 3
+                        Class 7 ONLY matches to areas 0 and 2
+
+                Result:
+
+                        1. Remove Area 1 as a feature, has no predictive value for ANY classes
+                        2. Each class matches to only 1 or two areas
+                        3. Each area can match to multiple classes
+
+
+Soil Type
+        
+        Finding:
+                
+                the vast majority of the 280 soil types and class plots are nearly empty for each class
+                        
+                        out of the 280 plots, only a single plot showed slightly more than 
+                        50% of a class described by a particular soil type
+                        
+                        from the 280 plots, the overwhelming majority had near 0 or 0 instances 
+                        of a class described by a soil type
+
+        Result:
+
+                all soil features will be removed. there is no predictive value in keeping them 
