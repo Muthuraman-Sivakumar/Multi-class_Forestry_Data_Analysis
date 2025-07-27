@@ -59,7 +59,7 @@
 
         Success Criteria
                 
-                - model accuracy between 80-90% on stratified test datasets
+                - model accuracy between 80-85% on stratified test datasets
 
         Considerations
 
@@ -122,6 +122,9 @@
                                 - Aspect
                                         degrees azimuth
                                         the direction of the terrain's slope (0 = N, 90 = W, etc.)
+                                - Slope         
+                                        degrees
+                                        the slope of the terrain
                                 - Horizontal_Distance_To_Hydrology
                                         meters
                                         horiz. distance to nearest surface water source
@@ -164,12 +167,28 @@
 
                 - soil types
         
-        Data Exploration
+        Dataset Exploration Methods
 
-                1st Round - Using Data Wrangler for Simple Exploration
+                (1) Class Distributions (class imbalances)
+                        
+                        - gives context to critically asses feature distributions
+                          and correlations
 
-                        - Enormous class imbalance
-                                (1)
+                (2) Class-Feature Visualizations
+                        
+                        - identify patterns between features to guide data perparation
+
+                (3) Correlation Analysis between class-features(Pearson, Spearman, Kendall)
+                        
+                        - guides feature extraction by giving insights on appropriate
+                          methods for extraction and serving as a benchmark to assess
+                          the automated feature extraction process
+                
+                (4) Feature Importance
+
+                        - feature importance informs feature selection technique choice
+                          and creates a benchmark to assess automated feature selection
+                          output
 
                 
 
@@ -177,6 +196,9 @@
 
 ### 3. Data Preparation
 
+        -  Dimensionality Reduction (reduce noise, assist model to extract significant signlas)
+                (1) - Feature Selection (make a dataset with only relevant features for classification) (removes the bulk of noise so feature extraction isn't muddied)
+                (2) - Feature Extraction (from the curated list of relevant features, combine and transform features to further reduce noise and amplify signals) (amplifies signals by transforming and combining features. removes RESIDUAL noise as a byproduct of signal amplification.)
 
 ### 4. Data Modeling
 
