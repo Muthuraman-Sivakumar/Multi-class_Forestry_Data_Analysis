@@ -42,17 +42,18 @@
     Jupyter Notebooks
 
         1 - EDA
-            (a) Class Distributions
-            (b) Multivariate Feature Visualizations
-            (c) Pearson Correlations
-            (d) EDA Summary
+            (a) EDA Summary
+            (b) Class Distributions
+            (c) Multivariate Feature Visualizations
+            (d) Pearson Correlations
 
             helper.py
 
-        2 - Data Preprocessing
-            (a) Feature Engineering
-            (b) Dimensionality Reduction
-            (c) Class Balancing
+        2 - Preprocessing
+            (a) Preprocessing Summary
+            (b) Feature Engineering
+            (c) Dimensionality Reduction
+            (d) Class Balancing
 
             helper.py
 
