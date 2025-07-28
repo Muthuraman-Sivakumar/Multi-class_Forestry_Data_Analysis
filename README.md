@@ -1,55 +1,67 @@
 # Real-world Forest Covertypes Classification Project
 
-        project goal: create a mutli-class classification model that can accurately predict forest covers (tree types) given real-world data
-
-
-## Overview of Dataset and its Source
-
-        The project uses the real-world "Forest Covertypes" dataset taken from the UC Irvine Machine Learning Repository. The Dataset was downloaded via the Scikit-learn library
-
-                UC Irvine link: https://archive.ics.uci.edu/dataset/31/
-
-
-        Dataset Overview
-
-                581012 observations
-                54 features
-                7  classes
-
-                Each observation represents a 30m x 30m forest area
-
-                The target feature is the forest covertype
-                There are 7 unique covertypes -> 7 classes in dataset
-
-                Features are numerical or binary
-                        
-                        numerical data is raw (not scaled)
-                        discrete data is binary (0's or 1's).
+    Explored, visualized, and summarized insights from real-world forestry data
         
+        Documented under Jupyter Notebooks/1 - EDA !!!
+
+
+    EDA insights are used to advance preprocessing and ML training stages 
+
+
+## Dataset Source
+
+    Project used the "Forest Covertypes" dataset found in the UC Irvine Machine Learning Repository.
         
-        ***More details regarding the dataset and its features are found on UC Irvine's website***
+        UC Irvine link: https://archive.ics.uci.edu/dataset/31/
 
 
+    Data was downloaded via Scikit-learn
 
-        Citation:
 
-                Blackard, Jock. "Covertype." UCI Machine Learning Repository, 1998, https://doi.org/10.24432/C50K5N.
+    Citation:
 
-        Copyright:
+        Blackard, Jock. "Covertype." UCI Machine Learning Repository, 1998, https://doi.org/10.24432/C50K5N.
 
-                Copyright Jock A. Blackard and Colorado State University
+    Copyright:
 
+        Copyright Jock A. Blackard and Colorado State University
+        
+
+## Data Overview
+
+    ===========================
+    |    581012 observations  | ===> Each observation represents a 30m x 30m forest area
+    |    54 features          | ===> Features are either numerical (not scaled) or categorical (binary and non-binary)
+    |    7  classes           | ===> Each class (target feature) represents a "forest covertype" (i.e. the kind of trees on the 30m x 30m forest area)
+    ===========================
+    
+    Further details can be found on UC Irvine's website
 
 ## File Structure
 
-        
+    Jupyter Notebooks
+
+        1 - EDA
+            (a) Class Distributions
+            (b) Multivariate Feature Visualizations
+            (c) Pearson Correlations
+            (d) EDA Summary
+
+            helper.py
+
+        2 - Data Preprocessing
+            (a) Feature Engineering
+            (b) Dimensionality Reduction
+            (c) Class Balancing
+
+            helper.py
+
+    README.md
+    requirements.txt
 
 ## Project Workflow
         
         Used a modified CRISP-DM workflow to outline project
-        
-        Replaced "Deployment" step with "Report" summarizing the project's work and outcomes
-
 
 ### 1. Project Understanding
 
