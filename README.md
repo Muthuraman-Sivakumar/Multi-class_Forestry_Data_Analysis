@@ -59,6 +59,7 @@
 
                 helper.py
 
+    .gitignore
     README.md
     requirements.txt
 
