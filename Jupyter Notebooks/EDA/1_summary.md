@@ -9,7 +9,7 @@
     ===========================================================================================================
 
 # Summaries
-### (a) Class Distributions
+### (b) Class Distributions
 
     Histogram visual shows a clear class imbalance. Here are the results
             
@@ -32,25 +32,25 @@
     This ensures that class balancing techniques are done on clean data. This way class balancing won't blur EDA or preprocessing
 
 
-### (b) Feature Visualizations
+### (c) Multivariate Feature Visualizations
 
     =======================================================================================================================================
     |                                                                                                                                     |
-    |       The training dataset was split into each class. These datasets then had each feature trimmed to 1.5 Standard Deviations       |
+    |       To reduce noise, the training dataset was cut to 1.5 Standard Deviations. This was done by separating the training data       |
+    |                               into each class, then trimming each feature to 1.5 Standard Deviations.                               |
     |                                                                                                                                     |
     |                                  This step was taken to remove outliers and identify core signals                                   |
     |                                                                                                                                     |
     =======================================================================================================================================
 
-    Univariate patterns are the simplest signal to find, therefore
-    discovering them should be the first approach in EDA
+    Univariate patterns are the simplest signal to find, therefore discovering them should be the first approach in EDA
 
     Strong, clear univariate patterns also eliminate the need for complex modeling
 
 
     Summary:
         
-    Sunlight Features
+    Key Sunlight Feature Insights
     
         Histogram:
 
@@ -86,13 +86,13 @@
                         - there are key aspect ranges that can predict hillshade values (local min/max)
 
 
-    Distance Features
+    Key Distance Feature Insights
     
         Histogram:
 
             Elevation: 
 
-                    Clear elevation trends, high predictive weight 
+                    Clear elevation trends, high predictive weight
             
             Overall:
 
@@ -101,34 +101,31 @@
 
 
 
-Sunlight and Distance Features:
+    Sunlight + Distance Feature Associations:
 
-    Summary: 
+        Summary: 
 
-        Each set of 5 scatterplots show class distinction across all feature relationships
+            Each set of 5 scatterplots show class distinction across all feature relationships
 
-        Gives an idea to what features need to be grouped to engineer discerning, predictive features
+            Gives an idea to what features need to be grouped to engineer discerning, predictive features
 
 
-Wilderness Area:
+    Wilderness Area:
 
-    Summary:
+        Summary:
 
-        Each class has Wilderness Area patterns, however each class' patterns overlap.
-        
-        for this reason, univariate analysis is not enough. Features must be engineered to capture multivariate patterns that can discern classes
+            Each class has predictive Wilderness Area patterns, however these patterns overlap between classes.
+            
+            Therefor univariate analysis is not enough - features representing multiple variable must be engineered to capture discerning signals
 
-Soil Type:
+    Soil Type:
 
-    Summary:
+        Summary:
 
-        A quick glance at visualizations show almost 0 soil types present among each class
+            A quick glance at visualizations show almost 0 soil types were present among each class. As a result, there is no predictive signal from soil types. If anything, it will create noise and increase computation time
 
-        Hence, each class is homogenous - they all lack soil data
+            As a result all 40 soil features will be removed from the dataset
 
-        As a result, there is no class discerning or predictive signal from soil types
+### (d) Pearson Correlation Analysis
 
-        If anything, it will create noise and increase computation time
-
-        
-        As a result all 40 soil features will be removed from the dataset
+    
