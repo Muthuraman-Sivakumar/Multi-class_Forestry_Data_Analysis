@@ -5,7 +5,7 @@
 ## About the Project
 The project aims to build a classification model that accurately predicts the forest type of a forest area (Aspen, Krummholz, etc.).
 
-The project uses the UCI Forest Covertypes dataset, please see the "References" section
+The project uses the UCI Forest Covertypes dataset (see **"References"** section)
 
 ## File Structure
 
@@ -42,8 +42,8 @@ The project uses the UCI Forest Covertypes dataset, please see the "References" 
             └── 7 classes (7 types of forests)
 
 # Extra Details
-More details on features found in "Data Dictionary.md" file ([link](DATA_DICTIONARY.md))   
-Thought process behind project is found in "Project Notes.md" file ([link](PROJECT_NOTES.md))
+More details on features found in **"Data Dictionary.md"** file ([link](DATA_DICTIONARY.md))   
+Thought process behind project is found in **"Project Notes.md"** file ([link](PROJECT_NOTES.md))
 
 # References
 - Blackard, Jock. "Covertype." UCI Machine Learning Repository, 1998, https://doi.org/10.24432/C50K5N.
