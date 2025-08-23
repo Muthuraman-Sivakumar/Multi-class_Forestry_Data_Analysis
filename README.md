@@ -1,4 +1,4 @@
-# Multi-class Forestry Prediction
+# Forest Classification
 **Created by:** Muthuraman Sivakumar  
 **Date:** August 2025
 
