@@ -3,7 +3,7 @@
 **Date:** August 2025
 
 ## About the Project
-The project aims to build a classification model that accurately predicts the forest type of a forestry area (Aspen, Krummholz, etc.).
+The project aims to build a classification model that accurately predicts the forest type of a forest area (Aspen, Krummholz, etc.).
 
 The project uses the UCI Forest Covertypes dataset, please see the "References" section
 
