@@ -3,22 +3,10 @@
 **Date:** August 2025
 
 ## About the Project
-The goal is to build a classification model that accurately predicts the forest type of a forestry area (Aspen, Krummholz, etc.).
+The project aims to build a classification model that accurately predicts the forest type of a forestry area (Aspen, Krummholz, etc.).
 
 The project uses the UCI Forest Covertypes dataset, please see the "References" section
 
-## How to Access Data in IDE
-Python
-```python
-from sklearn.datasets import fetch_covtype
-
-data_bunch = fetch_covtype(as_frame=True)
-df = data_bunch.data
-output = data_bunch.target
-df['Cover_Type'] = output
-
-# df holds all data as a pandas DataFrame object
-```
 ## File Structure
 
     ├── README.md                               # This file
